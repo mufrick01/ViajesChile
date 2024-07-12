@@ -2,12 +2,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     window.addEventListener('scroll', function () {
-        const myDiv = document.getElementById('mynav');
+        const mynavbar = document.getElementById('mynav');
         if (window.scrollY > 0) {
-            myDiv.classList.add('glassmorphism');
+            mynavbar.classList.add('glassmorphism');
         } else {
-            myDiv.classList.remove('glassmorphism');
+            mynavbar.classList.remove('glassmorphism');
         }
+    });
+
+    const mynav = document.getElementById('mynav');
+    
+    mynav.addEventListener('mouseover', () => {
+        mynav.classList.add('glassmorphism');
+    });
+    mynav.addEventListener('mouseout', () => {
+        mynav.classList.remove('glassmorphism');
     });
 
 

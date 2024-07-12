@@ -11,13 +11,16 @@
     <title>ViajesCHILE</title>
 </head>
 
-<body class="bg-black">
+<body class="bg-black ff-doc">
 
 
     <header>
         <nav class="fixed-top navbar navbar-expand-md" data-bs-theme="dark" id="mynav">
             <div class="container-fluid">
-                <p class="text-white"><span class="pe-2">[@]</span>ViajesChile</p>
+                <div>
+                    <img src="./assets/img/viajes.svg" alt="" class="img-brand">
+                    <a href="#" class="text-decoration-none text-white">ViajesChile</a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -63,10 +66,12 @@
 
 
 
-        <section class="mt-4 d-none d-md-block">
+        <section class="mt-4 d-none d-md-block px-3">
             <div class="row">
                 <div class="col-12 col-md-4 text-white p-2">
-                    <h2 class="text-center bg-info">-@-</h2>
+                    <div class="bg-info d-flex justify-content-center p-2">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
                     <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, facilis
                         praesentium! Minus
                         deleniti velit commodi quaerat molestias quo debitis ipsum, a alias modi officia cumque minima
@@ -77,11 +82,15 @@
                         praesentium! Minus
                         deleniti velit commodi quaerat molestias quo debitis ipsum, a alias modi officia cumque minima
                         reiciendis dolore, ratione doloribus?</p>
-                    <h2 class="text-center bg-info">-@-</h2>
+                    <div class="bg-info d-flex justify-content-center p-2">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
 
                 </div>
                 <div class="col-12 col-md-4 text-white p-2">
-                    <h2 class="text-center bg-info">-@-</h2>
+                    <div class="bg-info d-flex justify-content-center p-2">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
                     <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, facilis
                         praesentium! Minus
                         deleniti velit commodi quaerat molestias quo debitis ipsum, a alias modi officia cumque minima
@@ -96,7 +105,7 @@
                 <div class="card col-6 col-md-3" style="background-color: rgba(0, 0, 0, 0);">
                     <img src="./assets/img/card1.jpg" class="card-img-top img-cover-center" alt="...">
                     <div class="card-body bg-info">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
                     </div>
@@ -105,7 +114,7 @@
                 <div class="card col-6 col-md-3" style="background-color: rgba(0, 0, 0, 0);">
                     <img src="./assets/img/card1.jpg" class="card-img-top img-cover-center" alt="...">
                     <div class="card-body bg-info">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
                     </div>
@@ -114,7 +123,7 @@
                 <div class="card col-6 col-md-3" style="background-color: rgba(0, 0, 0, 0);">
                     <img src="./assets/img/card1.jpg" class="card-img-top img-cover-center" alt="...">
                     <div class="card-body bg-info">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
                     </div>
@@ -123,7 +132,7 @@
                 <div class="card col-6 col-md-3" style="background-color: rgba(0, 0, 0, 0);">
                     <img src="./assets/img/card1.jpg" class="card-img-top img-cover-center" alt="...">
                     <div class="card-body bg-info">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
                     </div>
@@ -151,17 +160,35 @@
         </section>
 
     </main>
-    <footer class="bg-info d-flex justify-content-center align-content-center">
-        <div class="row">
+    <footer class="bg-info text-white">
+        <div class="row p-3">
             <div class="col-12 col-md-6">
-                <h2 class="text-center">ChileViajes</h2>
+                <div class="d-flex h-100 justify-content-evenly">
+                    <h2 class="m-auto me-md-3">ChileViajes</h2>
+                </div>
             </div>
-            <div class="col-12 col-md-6 d-flex justify-content-center bg-danger align-items-center">
-                <div class="row">
-                    <p class="col-3 text-center">[@]</p>
-                    <p class="col-3 text-center">[@]</p>
-                    <p class="col-3 text-center">[@]</p>
-                    <p class="col-3 text-center">[@]</p>
+            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                <div class="d-flex h-100 justify-content-center justify-content-md-start ">
+                    <button class="btn">
+                        <a href="#">
+                            <i class=" text-white fa-brands fa-linkedin fa-2x my-auto mx-2"></i>
+                        </a>
+                    </button>
+                    <button class="btn">
+                        <a href="#">
+                            <i class=" text-white fa-brands fa-linkedin fa-2x my-auto mx-2"></i>
+                        </a>
+                    </button>
+                    <button class="btn">
+                        <a href="#">
+                            <i class=" text-white fa-brands fa-linkedin fa-2x my-auto mx-2"></i>
+                        </a>
+                    </button>
+                    <button class="btn">
+                        <a href="#">
+                            <i class=" text-white fa-brands fa-linkedin fa-2x my-auto mx-2"></i>
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -173,6 +200,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/07eb1d17f0.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
