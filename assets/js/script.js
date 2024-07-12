@@ -1,22 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
     window.addEventListener('scroll', function () {
         const mynavbar = document.getElementById('mynav');
         if (window.scrollY > 0) {
-            mynavbar.classList.add('glassmorphism');
+            mynavbar.classList.add('bg-info');
         } else {
-            mynavbar.classList.remove('glassmorphism');
+            mynavbar.classList.remove('bg-info');
         }
     });
 
     const mynav = document.getElementById('mynav');
-    
+
     mynav.addEventListener('mouseover', () => {
-        mynav.classList.add('glassmorphism');
+        mynav.classList.add('bg-info');
     });
     mynav.addEventListener('mouseout', () => {
-        mynav.classList.remove('glassmorphism');
+        if(window.scrollY==0){
+            mynav.classList.remove('bg-info');
+        }
     });
 
 
