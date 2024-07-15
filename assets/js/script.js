@@ -1,29 +1,29 @@
-document.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function () {
 
+    const tooltipTriggerList = $('[data-bs-toggle="tooltip"]');
+    const tooltipList = tooltipTriggerList.map(function () {
+        return new bootstrap.Tooltip($(this)[0]);
+    });
 
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-
-    window.addEventListener('scroll', function () {
-        const mynavbar = document.getElementById('mynav');
-        if (window.scrollY > 0) {
-            mynavbar.classList.add('bg-info');
+    $(window).on('scroll', function () {
+        const mynavbar = $('#mynav');
+        if ($(window).scrollTop() > 0) {
+            mynavbar.addClass('bg-info');
         } else {
-            mynavbar.classList.remove('bg-info');
+            mynavbar.removeClass('bg-info');
         }
     });
 
-    const mynav = document.getElementById('mynav');
+    const mynav = $('#mynav');
 
-    mynav.addEventListener('mouseover', () => {
-        mynav.classList.add('bg-info');
+    mynav.on('mouseover', function () {
+        mynav.addClass('bg-info');
     });
-    mynav.addEventListener('mouseout', () => {
-        if(window.scrollY==0){
-            mynav.classList.remove('bg-info');
+    
+    mynav.on('mouseout', function () {
+        if ($(window).scrollTop() == 0) {
+            mynav.removeClass('bg-info');
         }
     });
-
 
 });
