@@ -2,6 +2,12 @@
     /* font-family: "Bebas Neue", sans-serif; */
 }
 
+
+body{
+    scroll-behavior: smooth;
+  }
+
+
 .img-cover-center {
     width: 100%;
     height: 100%;
